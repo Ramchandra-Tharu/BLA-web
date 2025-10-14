@@ -104,7 +104,6 @@ body {
 
 /* Hero */
 .hero-section {
-  background: url('https://placehold.co/1600x700/2980b9/ffffff?text=Bright+Knowledge+Institute') center/cover no-repeat;
   color: white;
   text-align: center;
   padding: 140px 20px;
@@ -226,9 +225,10 @@ footer {
 
 .footer-container {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 0 40px;
+  align-items: center;
+  justify-content: space-evenly;
+  /* flex-wrap: wrap; */
+  
 }
 
 .contact-info, .contact-form {
@@ -238,6 +238,7 @@ footer {
 .social-media a {
   color: white;
   margin-right: 10px;
+  margin-bottom: 10px;
   font-size: 1.2rem;
   transition: 0.3s;
 }
@@ -272,9 +273,14 @@ footer {
 .footer-bottom {
   text-align: center;
   padding: 15px;
+  margin-left: 2px;
   border-top: 1px solid #34495e;
-  margin-top: 20px;
   font-size: 0.9rem;
+}
+.map iframe{
+  margin-left: 0;
+  height: 500px;
+  width: 900px;
 }
 
 /* Responsive */
