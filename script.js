@@ -4,10 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const heroSection = document.querySelector('.hero-section');
     // 👇 New sports-themed images
     const images = [
-        'https://source.unsplash.com/1920x1080/?school,basketball',
-        'https://source.unsplash.com/1920x1080/?school,soccer',
-        'https://source.unsplash.com/1920x1080/?school,running,track'
-    ];
+img.src = 'school-banner.jpg'
+   ];
     let currentImageIndex = 0;
 
     // Set the initial image
