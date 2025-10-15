@@ -6,9 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Add image URLs here
     const images = [
         'school-banner.jpg',
-        'https://placehold.co/1920x1080/2ecc71/ffffff?text=Computer+Lab',
-        'https://placehold.co/1920x1080/3498db/ffffff?text=Classroom',
-        'https://placehold.co/1920x1080/e74c3c/ffffff?text=Students'
+        'classroom.jpeg',
+        'computer lab.jpeg',
+        'student.jpeg'
     ];
 
     let currentImageIndex = 0;
