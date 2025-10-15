@@ -9,36 +9,102 @@ body {
   background-color: #f9f9f9;
   color: #333;
 }
-.top{
+
+.top {
   display: flex;
-  justify-content: space-between ;
+  justify-content: space-between;
   align-items: center;
   background: #1258A3;
   color: #fff;
 }
-.opt{
+
+.addmission button {
+  margin-left: 10px;
+  padding: 10px 20px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: rgb(125, 4, 123);
+  color: white;
+  flex-wrap: wrap;
+}
+
+.nav-logo {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav-logo img {
+  border-radius: 50%;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #f1c40f;
+}
+
+/* Dropdown */
+.opt {
   background: transparent;
   border: none;
   color: #fff;
   font-size: 15px;
-   font-weight: 500;
-}
-.addmission{
-   padding:10px 20px;
+  font-weight: 500;
+  padding: 5px 25px 5px 10px;
+  appearance: none;
+  cursor: pointer;
+  outline: none;
+  position: relative;
 }
 
-.banner {
+/* Custom dropdown arrow */
+.opt::after {
+  content: "▼";
+  font-size: 10px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.opt:hover {
+  color: #f1c40f;
+}
+
+.opt option {
+  background: #fff;
+  color: #333;
+}
+
+/* Hero Section */
+.hero-section {
   position: relative;
   width: 100%;
   height: 600px;
-  overflow: hidden;
-}
-
-.banner img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
 }
 
 .banner-overlay {
@@ -47,7 +113,8 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4); /* dark overlay */
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
 }
 
 .banner-text {
@@ -71,82 +138,9 @@ body {
   font-weight: 300;
 }
 
-.school-marquee {
-  color:#212121  ;     /* white text */
-  font-size: 1.1rem;
-  font-weight: 500;
-  padding: 10px 0;
-  letter-spacing: 1px;
-  padding: 0;
- 
-}
-#options{
-  color: black;
-}
-
-/* Navbar */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 40px;
-  background: rgb(125, 4, 123);
-  color: white;
-  flex-wrap: wrap;
-}
-
-.nav-logo {
-  padding:10px 20px;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.nav-logo img {
-  border-radius: 50%;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: white;
-  font-weight: 500;
-  transition: 0.3s;
-}
-
-.nav-links a:hover {
-  color: #f1c40f;
-}
-
-/* Hero */
-.hero-section {
-  background: url('https://placehold.co/1600x700/2980b9/ffffff?text=Bright+Knowledge+Institute') center/cover no-repeat;
-  color: white;
-  text-align: center;
-  padding: 140px 20px;
-}
-
-.hero-text h2 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-.hero-text p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
-.explore{
-  margin-bottom: 20px;
-}
-
 .btn {
-background: transparent; 
- color:#f9f9f9;
+  background: transparent;
+  color: #f9f9f9;
   padding: 10px 15px;
   border-radius: 25px;
   border: 2px solid white;
@@ -176,27 +170,31 @@ h2 {
 }
 
 /* Courses & Features */
-.course-container, .features-container {
+.course-container,
+.features-container {
   display: flex;
   justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
 }
 
-.course-card, .feature-card {
+.course-card,
+.feature-card {
   background: white;
   padding: 30px;
   border-radius: 10px;
   width: 280px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
 }
 
-.course-card:hover, .feature-card:hover {
+.course-card:hover,
+.feature-card:hover {
   transform: translateY(-8px);
 }
 
-.course-card i, .feature-card i {
+.course-card i,
+.feature-card i {
   font-size: 2rem;
   color: #3498db;
   margin-bottom: 15px;
@@ -251,13 +249,13 @@ footer {
 
 .footer-container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-evenly;
-  /* flex-wrap: wrap; */
-  
+  flex-wrap: wrap;
 }
 
-.contact-info, .contact-form {
+.contact-info,
+.contact-form {
   width: 300px;
 }
 
@@ -273,7 +271,8 @@ footer {
   color: #f1c40f;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
@@ -299,11 +298,11 @@ footer {
 .footer-bottom {
   text-align: center;
   padding: 15px;
-  margin-left: 2px;
   border-top: 1px solid #34495e;
   font-size: 0.9rem;
 }
-.map iframe{
+
+.map iframe {
   margin-left: 0;
   height: 500px;
   width: 900px;
@@ -311,6 +310,19 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
-  .nav-links { flex-direction: column; text-align: center; gap: 10px; }
-  .course-card, .feature-card { width: 90%; }
+  .nav-links {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .course-card,
+  .feature-card {
+    width: 90%;
+  }
+
+  .map iframe {
+    width: 100%;
+    height: 300px;
+  }
 }
