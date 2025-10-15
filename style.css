@@ -13,7 +13,15 @@ body {
   display: flex;
   justify-content: space-between ;
   align-items: center;
-  background-color: rgb(11, 119, 234);
+  background: #1258A3;
+  color: #fff;
+}
+.opt{
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+   font-weight: 500;
 }
 .addmission{
    padding:10px 20px;
@@ -72,6 +80,9 @@ body {
   padding: 0;
  
 }
+#options{
+  color: black;
+}
 
 /* Navbar */
 .navbar {
@@ -79,7 +90,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 15px 40px;
-  background: rgb(97, 97, 16);
+  background: rgb(125, 4, 123);
   color: white;
   flex-wrap: wrap;
 }
@@ -134,10 +145,11 @@ body {
 }
 
 .btn {
-  background: #f1c40f;
-  color: #333;
+background: transparent; 
+ color:#f9f9f9;
   padding: 10px 15px;
   border-radius: 25px;
+  border: 2px solid white;
   text-decoration: none;
   font-weight: 600;
   transition: 0.3s;
