@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     heroSection.style.backgroundImage = `url('${images[0]}')`;
     heroSection.style.backgroundSize = 'cover';
     heroSection.style.backgroundPosition = 'center';
-    heroSection.style.transition = 'background-image 1s ease-in-out';
+    heroSection.style.transition = 'background-image 5s ease-in-out';
 
     // Change image every 3 seconds
     function changeBackgroundImage() {
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         heroSection.style.backgroundImage = `url('${images[currentImageIndex]}')`;
     }
 
-    setInterval(changeBackgroundImage, 3000);
+    setInterval(changeBackgroundImage, 5000);
 
     // --- Dynamic Stats Counter ---
     const counters = document.querySelectorAll('.counter');
