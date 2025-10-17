@@ -177,6 +177,22 @@ h2 {
   color: #3498db;
   margin-bottom: 25px;
 }
+.feature-img{
+  width: 300px;
+  height: auto;
+  animation: zoom-in linear both;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
+
+@keyframes zoom-in {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 
 /* Courses & Features */
 .course-container,
