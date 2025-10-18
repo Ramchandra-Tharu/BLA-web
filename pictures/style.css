@@ -139,7 +139,17 @@ body {
 }
 
 .gallery-container img:hover {
+    transform: scale(1.5);
+}
+.img-text {
+  margin-top: 4px;
+  text-align: left;
+  width: 300px;
+}
+.img-text:hover{
     transform: scale(1.05);
+
+  
 }
 
 .allpic {

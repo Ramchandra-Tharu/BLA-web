@@ -264,9 +264,14 @@ h2 {
   text-align: left;
   width: 300px;
 }
+.img-text:hover{
+    transform: scale(1.05);
+
+  
+}
 
 .gallery-container img:hover {
-  transform: scale(1.05);
+  transform: scale(1.5);
 }
 
 .allpic {
