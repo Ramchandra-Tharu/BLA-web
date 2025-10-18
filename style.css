@@ -246,16 +246,23 @@ h2 {
 .gallery-container {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
   flex-wrap: wrap;
 }
 
 .gallery-container img {
-  border-radius: 10px;
-  width: 350px;
+  border-radius: 5px;
+  width: 300px;
   height: 250px;
   object-fit: cover;
   transition: 0.3s;
+}
+
+/* image attribute text */
+.img-text {
+  margin-top: 4px;
+  text-align: left;
+  width: 300px;
 }
 
 .gallery-container img:hover {
