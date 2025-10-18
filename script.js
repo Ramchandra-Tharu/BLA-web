@@ -5,10 +5,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Add image URLs here
     const images = [
-        'school banner.jpg',
-        'classroom.jpg',
-        'computer lab.jpg',
-        'student.jpg'
+        'images/school banner.jpg',
+        'images/classroom.jpg',
+        'images/computer lab.jpg',
+        'images/student.jpg'
     ];
 
     let currentImageIndex = 0;
