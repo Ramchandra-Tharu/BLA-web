@@ -168,15 +168,12 @@ body {
 
 
 .about {
-  background-color: #FFF5F7;
-  /* very light pink-white */
-  color: #2B2B2B;
-  /* dark gray for contrast */
-
-  padding: 40px;
-  box-shadow: 0 4px 16px rgba(255, 75, 92, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  padding: 20px;
   height: 400px;
-  background: linear-gradient(135deg, #87CEFA 40%, #20B2AA 90%);
+ 
 }
 
 .content-section {
@@ -192,6 +189,12 @@ h2 {
   color: #3498db;
   margin-bottom: 25px;
 }
+
+.founder-img img{
+  width: 200px;
+  height: 200px;
+}
+/* about section */
 
 .feature-img {
   width: 300px;
