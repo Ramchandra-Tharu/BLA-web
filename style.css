@@ -189,10 +189,25 @@ h2 {
   color: #3498db;
   margin-bottom: 25px;
 }
-
+.position{
+  width: 300px;
+  text-align: center;
+}
+.founder-img{
+  width: 300px;
+  text-align: center;
+  font-size: 20px;
+  color: black;
+  padding-left: 20px;
+  font-weight: 700px;
+}
 .founder-img img{
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
+}
+.about-founder{
+  padding-left: 0px;
+  width: 500px;
 }
 /* about section */
 
