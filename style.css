@@ -194,10 +194,10 @@ h2 {
   width: 300px;
   text-align: center;
   margin-bottom: 20px;
+  padding-top: 20px;
 }
 .about-founder{
   display: flex;
-  padding-left: 0px;
   width: 1000px;
   gap: 30px;
 }
@@ -218,7 +218,23 @@ h2 {
 .founder-intro{
   text-align: justify;
 }
-/* about section */
+
+.about-all{
+  padding-top: 50px;
+}
+.buttons{
+  padding-top: 20px;
+
+}
+.btns3{
+  width: 150px;
+  font-size: 20px;
+  margin-top: 20px;
+  color: white;
+  background-color: rgba(173, 3, 3, 0.968);
+  border: none;
+}
+  /* Img section */
 
 .feature-img {
   width: 300px;
@@ -310,7 +326,6 @@ h2 {
   width: 100px;
   font-size: 20px;
   padding: 10px;
-  border-radius: 20px;
   color: white;
   background-color: rgba(173, 3, 3, 0.968);
   border: none;
