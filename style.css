@@ -170,6 +170,7 @@ body {
 .about {
   display: flex;
   justify-content: space-between;
+  gap:10px;
   align-items: top;
   padding: 20px;
   height: 400px;
@@ -192,9 +193,17 @@ h2 {
 .position{
   width: 300px;
   text-align: center;
+  margin-bottom: 20px;
+}
+.about-founder{
+  display: flex;
+  padding-left: 0px;
+  width: 1000px;
+  gap: 30px;
 }
 .founder-img{
-  width: 300px;
+  display: flex;
+  width: 700px;
   text-align: center;
   font-size: 20px;
   color: black;
@@ -205,9 +214,9 @@ h2 {
   width: 300px;
   height: 300px;
 }
-.about-founder{
-  padding-left: 0px;
-  width: 500px;
+
+.founder-intro{
+  text-align: justify;
 }
 /* about section */
 
