@@ -10,7 +10,9 @@ body {
   color: #333;
   margin-top: 70px;
 }
-
+.nav-logo logo{
+  width: 80;
+}
 .top {
   display: flex;
   justify-content: space-between;
