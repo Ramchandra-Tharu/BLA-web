@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     heroSection.style.backgroundImage = `url('${images[0]}')`;
     heroSection.style.backgroundSize = 'cover';
     heroSection.style.backgroundPosition = 'center';
-    heroSection.style.transition = 'background-image 5s ease-in-out';
+    heroSection.style.transition = 'background-image 3s ease-in-out';
 
     // Change image every 3 seconds
     function changeBackgroundImage() {
