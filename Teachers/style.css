@@ -127,8 +127,8 @@ body {
 /* ===== Hierarchy Section ===== */
 #hierarchy {
   max-width: 1200px;
-  margin-top: 60px;
-  padding: 40px 20px;
+  margin: 0 auto;
+  padding-top: 80px;
   text-align: center;
   font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   background: #f4f7fc;
