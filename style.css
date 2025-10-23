@@ -279,12 +279,18 @@ h2 {
 }
 
 /* Courses & Features */
+
 .course-container,
 .features-container {
   display: flex;
   justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
+}
+#courses, #features{
+  height: 800px;
+  background: #1258A3;
+  margin-bottom: 20px;
 }
 
 .course-card,
@@ -297,6 +303,7 @@ h2 {
   transition: 0.3s;
 
 }
+
 
 .course-card:hover,
 .feature-card:hover {
