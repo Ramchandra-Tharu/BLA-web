@@ -277,13 +277,12 @@ h2 {
     transform: scale(1);
   }
 }
-
 /* course */
 /* ===== OUR COURSES SECTION ===== */
+/* ===== OUR COURSES SECTION ===== */
 .courses-section {
-  background-color: #1258A3;
   padding: 80px 10%;
-  background: linear-gradient(135deg, #f9fafb, #eef2ff);
+background: linear-gradient(135deg, #5492d0, #262627);
   font-family: "Poppins", sans-serif;
   color: #333;
 }
@@ -451,7 +450,6 @@ h2 {
     columns: 1;
   }
 }
-
 
 
 /* Gallery */
