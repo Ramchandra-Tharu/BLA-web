@@ -10,9 +10,11 @@ body {
   color: #333;
   margin-top: 70px;
 }
-.nav-logo logo{
+
+.nav-logo logo {
   width: 80;
 }
+
 .top {
   display: flex;
   justify-content: space-between;
@@ -135,7 +137,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color:#FFD700;
+  color: #FFD700;
   z-index: 2;
 }
 
@@ -172,11 +174,11 @@ body {
 .about {
   display: flex;
   justify-content: space-between;
-  gap:10px;
+  gap: 10px;
   align-items: top;
   padding: 20px;
   height: 400px;
- 
+
 }
 
 .content-section {
@@ -192,18 +194,21 @@ h2 {
   color: #3498db;
   margin-bottom: 25px;
 }
-.position{
+
+.position {
   width: 300px;
   text-align: center;
   margin-bottom: 20px;
   padding-top: 20px;
 }
-.about-founder{
+
+.about-founder {
   display: flex;
   width: 1000px;
   gap: 30px;
 }
-.founder-img{
+
+.founder-img {
   display: flex;
   width: 700px;
   text-align: center;
@@ -212,31 +217,48 @@ h2 {
   padding-left: 20px;
   font-weight: 700px;
 }
-.founder-img img{
+
+.founder-img img {
   width: 300px;
   height: 300px;
 }
 
-.founder-intro{
+.founder-intro {
   text-align: justify;
 }
 
-.about-all{
+.about-all {
   padding-top: 50px;
 }
-.buttons{
+
+.buttons {
   padding-top: 20px;
 
 }
-.btns3{
-  width: 150px;
-  font-size: 20px;
+
+.btns3 {
   margin-top: 20px;
+  background: transparent;
+  color: #f9f9f9;
+  border: 2px solid white;
+  width: 150px;
   color: white;
-  background-color: rgba(173, 3, 3, 0.968);
+  background: #1258A3;
   border: none;
+  font-weight: 600;
+  transition: 0.3s;
+  border-radius: 25px;
+  padding: 10px 15px;
+
 }
-  /* Img section */
+.btns3:hover{
+  color: black;
+  background-color: white;
+  border: 2px solid #1258A3;
+
+}
+
+/* Img section */
 
 .feature-img {
   width: 300px;
@@ -273,6 +295,7 @@ h2 {
   width: 280px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
+
 }
 
 .course-card:hover,
@@ -309,10 +332,11 @@ h2 {
   text-align: left;
   width: 300px;
 }
-.img-text:hover{
-    transform: scale(1.05);
 
-  
+.img-text:hover {
+  transform: scale(1.05);
+
+
 }
 
 .gallery-container img:hover {
@@ -325,18 +349,23 @@ h2 {
 }
 
 .more-btn {
-  width: 100px;
-  font-size: 20px;
-  padding: 10px;
+  background: transparent;
+  color: #f9f9f9;
+  border: 2px solid white;
+  width: 150px;
   color: white;
-  background-color: rgba(173, 3, 3, 0.968);
+  background: #1258A3;
   border: none;
+  font-weight: 600;
+  transition: 0.3s;
+  border-radius: 25px;
+  padding: 10px 15px;
 }
 
 .more-btn:hover {
-  font-size: 22px;
-  background-color: brown;
-  cursor: pointer;
+  color: black;
+  background-color: white;
+  border: 2px solid #1258A3;
 
 }
 
