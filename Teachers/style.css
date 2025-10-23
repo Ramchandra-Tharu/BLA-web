@@ -124,6 +124,22 @@ body {
 }
 
 /* teacher section */
+/* back buttun */
+
+.back {
+    padding:0;
+    text-align: left;
+}
+
+.back-btn {
+    width: 50px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    color: white;
+    background-color: rgba(173, 3, 3, 0.968);
+    border: none;
+}
 /* ===== Hierarchy Section ===== */
 #hierarchy {
   max-width: 1200px;

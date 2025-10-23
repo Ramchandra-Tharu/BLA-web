@@ -123,6 +123,23 @@ body {
     color: #3498db;
 }
 /* school section */
+
+/* back */
+
+.back {
+    padding:0;
+    text-align: left;
+}
+
+.back-btn {
+    width: 50px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    color: white;
+    background-color: rgba(173, 3, 3, 0.968);
+    border: none;
+}
 .about-school-section {
   background-color: #f4f7fa;
   padding: 80px 20px;
