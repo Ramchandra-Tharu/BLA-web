@@ -1,39 +1,178 @@
-:root{
---bg:#f5f7fb;
---card:#ffffff;
---accent:#4f46e5;
---muted:#6b7280;
---radius:12px;
-font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+/* ---------------------- */
+/* Global Reset & Fonts   */
+/* ---------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
+/* ---------------------- */
+/* Body Background        */
+/* ---------------------- */
+body {
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
 
-*{box-sizing:border-box}
-html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--bg),#e9eefb);color:#111827}
+/* ---------------------- */
+/* Container & Form Box   */
+/* ---------------------- */
+.container {
+  width: 100%;
+  max-width: 900px;
+  padding: 20px;
+}
 
+.form-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 35px 40px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
 
-.container{max-width:980px;margin:36px auto;padding:20px}
-.card{background:var(--card);border-radius:var(--radius);box-shadow:0 8px 30px rgba(2,6,23,0.06);overflow:hidden}
-.header{padding:20px 22px;background:linear-gradient(90deg, rgba(79,70,229,0.06), rgba(99,102,241,0.03));display:flex;align-items:center;gap:14px;border-bottom:1px solid rgba(15,23,42,0.03)}
-.logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:18px}
-h1{font-size:18px;margin:0}
-.lead{margin:4px 0 0;color:var(--muted);font-size:13px}
+.form-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 35px rgba(0, 0, 0, 0.15);
+}
 
+/* ---------------------- */
+/* Headings               */
+/* ---------------------- */
+h1 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 25px;
+  font-size: 28px;
+  letter-spacing: 0.5px;
+}
 
-form{padding:20px 24px}
-.form-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;align-items:start}
-@media (max-width:720px){.form-grid{grid-template-columns:1fr}}
-label{display:block;font-size:13px;margin-bottom:6px;color:#111827}
-.input, .select, .textarea{width:100%;padding:10px 12px;border-radius:8px;border:1px solid #e6e9f2;background:transparent;font-size:14px;color:inherit}
-.textarea{resize:vertical}
-.input:focus, .select:focus, .textarea:focus{outline:none;box-shadow:0 0 0 4px rgba(79,70,229,0.06);border-color:var(--accent)}
-.full{grid-column:1/-1}
-.actions{display:flex;gap:10px;justify-content:flex-end;margin-top:6px}
-.btn{padding:10px 16px;border-radius:10px;border:0;font-weight:600;cursor:pointer}
-.btn-primary{background:var(--accent);color:white}
-.btn-muted{background:#f3f4f6;color:#111827}
-.small{font-size:12px;color:var(--muted);margin-top:6px}
+h2 {
+  color: #444;
+  font-size: 18px;
+  margin: 25px 0 10px;
+  border-left: 4px solid #66a6ff;
+  padding-left: 8px;
+}
 
+p {
+  color: #555;
+  margin-bottom: 12px;
+}
 
-/* Small utility */
-select::-ms-expand{display:none}
+/* ---------------------- */
+/* Grid Layout            */
+/* ---------------------- */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.full {
+  grid-column: 1 / -1;
+}
+
+/* ---------------------- */
+/* Inputs & Select Fields */
+/* ---------------------- */
+.input, .select, textarea {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top: 5px;
+  font-size: 15px;
+  color: #333;
+  transition: 0.2s ease;
+}
+
+.input:focus, .select:focus, textarea:focus {
+  border-color: #66a6ff;
+  box-shadow: 0 0 3px #66a6ff;
+  outline: none;
+}
+
+/* ---------------------- */
+/* Labels                 */
+/* ---------------------- */
+label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #222;
+}
+
+/* ---------------------- */
+/* Checkbox Group         */
+/* ---------------------- */
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  margin-top: 10px;
+}
+
+.checkbox-group label {
+  font-weight: normal;
+  color: #333;
+}
+
+/* ---------------------- */
+/* Buttons                */
+/* ---------------------- */
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.btn {
+  padding: 10px 25px;
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-primary {
+  background: #66a6ff;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #4a8cff;
+}
+
+.btn-muted {
+  background: #eee;
+  color: #333;
+}
+
+.btn-muted:hover {
+  background: #ddd;
+}
+
+/* ---------------------- */
+/* Responsive Design      */
+/* ---------------------- */
+@media (max-width: 600px) {
+  .form-box {
+    padding: 25px 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
