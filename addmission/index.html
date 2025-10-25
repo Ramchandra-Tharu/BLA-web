@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addmission form </title>
+</head>
+<body>
+        
+
+<div>
+<label for="gender">Gender</label>
+<select id="gender" name="gender" class="select">
+<option value="">Select</option>
+<option>Male</option>
+<option>Female</option>
+<option>Other</option>
+</select>
+</div>
+
+
+<div>
+<label for="class">Class / Grade</label>
+<input id="class" name="class" class="input" type="text" placeholder="e.g. 10" required>
+</div>
+
+
+<div>
+<label for="section">Section</label>
+<input id="section" name="section" class="input" type="text" placeholder="e.g. A">
+</div>
+
+
+<div class="full">
+<label for="address">Address</label>
+<textarea id="address" name="address" rows="3" class="textarea" placeholder="Street, City, PIN"></textarea>
+</div>
+
+
+<div>
+<label for="parentName">Parent / Guardian Name</label>
+<input id="parentName" name="parentName" class="input" type="text" placeholder="e.g. Suresh Singh" required>
+</div>
+
+
+<div>
+<label for="phone">Phone</label>
+<input id="phone" name="phone" class="input" type="tel" placeholder="10-digit mobile" pattern="[0-9]{10}">
+</div>
+
+
+<div>
+<label for="email">Email (optional)</label>
+<input id="email" name="email" class="input" type="email" placeholder="example@mail.com">
+</div>
+
+
+<div>
+<label for="photo">Photo (optional)</label>
+<input id="photo" name="photo" class="input" type="file" accept="image/*">
+</div>
+
+
+<div class="full actions">
+<button type="reset" class="btn btn-muted">Reset</button>
+<button type="submit" class="btn btn-primary">Submit</button>
+</div>
+</div>
+</form>
+</section>
+</main>
+
+
+<!-- Optional: small script to show a submit alert (no external libs) -->
+<script>
+document.getElementById('studentForm').addEventListener('submit', function(e){
+e.preventDefault();
+alert('Form submitted — implement backend or further client-side handling as needed.');
+});
+</script>
+
+</body>
+</html>
