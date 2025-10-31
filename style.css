@@ -20,7 +20,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background: #1258A3;
-  color:black
+  color: black
 }
 
 .addmission button {
@@ -167,7 +167,8 @@ body {
   background: #fff;
   color: #3498db;
 }
-.explore{
+
+.explore {
   margin-top: 25px;
 }
 
@@ -254,7 +255,8 @@ h2 {
   padding: 10px 15px;
 
 }
-.btns3:hover{
+
+.btns3:hover {
   color: black;
   background-color: white;
   border: 2px solid #1258A3;
@@ -280,12 +282,13 @@ h2 {
     transform: scale(1);
   }
 }
+
 /* course */
 /* ===== OUR COURSES SECTION ===== */
 /* ===== OUR COURSES SECTION ===== */
 .courses-section {
   padding: 80px 10%;
-background: linear-gradient(135deg, #5492d0, #262627);
+  background: linear-gradient(135deg, #5492d0, #262627);
   font-family: "Poppins", sans-serif;
   color: #333;
 }
@@ -294,18 +297,18 @@ background: linear-gradient(135deg, #5492d0, #262627);
   text-align: center;
   font-size: 2.5rem;
   font-weight: 700;
-  color: #111;
+  color: #212121;
   margin-bottom: 10px;
 }
 
 .section-title span {
-  color: #4f46e5;
+  color: #fff;
 }
 
 .section-subtitle {
   text-align: center;
   font-size: 1rem;
-  color: #555;
+  color: #212121;
   margin-bottom: 50px;
 }
 
@@ -400,9 +403,17 @@ background: linear-gradient(135deg, #5492d0, #262627);
 }
 
 /* Colors for Streams */
-.science h4 { color: #2563eb; }
-.commerce h4 { color: #16a34a; }
-.arts h4 { color: #d97706; }
+.science h4 {
+  color: #2563eb;
+}
+
+.commerce h4 {
+  color: #16a34a;
+}
+
+.arts h4 {
+  color: #d97706;
+}
 
 .stream-card:hover {
   transform: translateY(-5px);
