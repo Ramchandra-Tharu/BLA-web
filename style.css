@@ -297,7 +297,7 @@ h2 {
   text-align: center;
   font-size: 2.5rem;
   font-weight: 700;
-  color: #212121;
+  color: #212121; 
   margin-bottom: 10px;
 }
 
@@ -524,7 +524,120 @@ h2 {
   border: 2px solid #1258A3;
 
 }
+/* Rank of topper student */
+.toppers-section {
+  text-align: center;
+  padding: 70px 20px;
+  background: linear-gradient(135deg, #fdfcfb, #e2d1c3);
+  font-family: 'Poppins', sans-serif;
+}
 
+.section-title {
+  font-size: 2.4em;
+  color: #1f2937;
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  color: #4b5563;
+  margin-bottom: 50px;
+  font-size: 1.1em;
+}
+
+.topper-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.topper-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  width: 200px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.topper-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.photo-frame {
+  border: 5px solid #facc15;
+  border-radius: 50%;
+  padding: 5px;
+  background: linear-gradient(135deg, #fde68a, #fbbf24, #f59e0b);
+  margin-bottom: 10px;
+  width: 140px;
+  height: 140px;
+  margin-inline: auto;
+  overflow: hidden;
+}
+
+.photo-frame img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.topper-card h3 {
+  font-size: 1.2em;
+  margin: 8px 0 4px;
+  color: #111827;
+  font-weight: 600;
+}
+
+.topper-card p {
+  color: #374151;
+  font-size: 0.95em;
+  margin-bottom: 5px;
+}
+
+.rank {
+  background: #3b82f6;
+  color: white;
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+.gold { border: 3px solid gold; }
+.silver { border: 3px solid silver; }
+.bronze { border: 3px solid #cd7f32; }
+
+.congrats {
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #16a34a;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 10px;
+  font-size: 0.9em;
+  font-weight: 500;
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 10px #22c55e; }
+  to { box-shadow: 0 0 20px #86efac; }
+}
+
+.first-topper .topper-card {
+  width: 250px;
+  transform: scale(1.08);
+}
 
 /* Stats */
 .stats-section {
