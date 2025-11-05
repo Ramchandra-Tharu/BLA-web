@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admission Inquiry Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Admission Inquiry Form</h2>
+  <p>Please fill this form and our admission team will get back to you.</p>
+
+  <form action="#" method="post">
+
+    <label>Student's Full Name</label>
+    <input type="text" name="student_name" placeholder="Enter student's full name" required>
+
+    <label>Date of Birth</label>
+    <input type="date" name="dob" required>
+
+    <label>Class Seeking Admission</label>
+    <select name="class" required>
+      <option value="">Select Class</option>
+      <option>Nursery</option>
+      <option>LKG</option>
+      <option>UKG</option>
+      <option>1 to 12 (Choose as applicable)</option>
+    </select>
+
+    <label>Parent / Guardian Name</label>
+    <input type="text" name="parent_name" placeholder="Enter parent/guardian name" required>
+
+    <label>Contact Number</label>
+    <input type="tel" name="phone" placeholder="Enter contact number" required>
+
+    <label>Email (Optional)</label>
+    <input type="email" name="email" placeholder="Enter email address">
+    <label>Admission Type</label>
+    <select name="class" required>
+      <option value="">Select</option>
+      <option>Transfer</option>
+     
+      <option>New</option>
+    </select>
+    
+
+    <label>Your Message / Query</label>
+    <textarea name="message" placeholder="Write your message here"></textarea>
+
+    <button type="submit">Submit Inquiry</button>
+  </form>
+</div>
+
+</body>
+</html>
