@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard | SR Academy</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    header {
+      background: black;
+      color:white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logout-btn {
+      background: #ffeb3b;
+      color: #1e3c72;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    .dashboard {
+      padding: 40px;
+      text-align: center;
+      color:black;
+    }
+
+    table {
+      width: 90%;
+      margin: 30px auto;
+      border-collapse: collapse;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      border-radius: 12px;
+      color:black;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 12px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    th {
+      background: rgba(255, 235, 59, 0.2);
+      color:black;
+    }
+
+    tr:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🏫 Admin Dashboard</h1>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </header>
+
+  <section class="dashboard">
+    <h2>All Student Records</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Roll No</th><th>Name</th><th>Class</th><th>Attendance</th><th>Marks (%)</th><th>Rank</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>John Doe</td><td>10-A</td><td>92%</td><td>88</td><td>4</td></tr>
+        <tr><td>2</td><td>Riya Sharma</td><td>10-A</td><td>96%</td><td>91</td><td>2</td></tr>
+        <tr><td>3</td><td>Arjun Patel</td><td>9-B</td><td>85%</td><td>80</td><td>7</td></tr>
+        <tr><td>4</td><td>Priya Verma</td><td>10-A</td><td>90%</td><td>86</td><td>5</td></tr>
+        <tr><td>5</td><td>Manish Kumar</td><td>9-A</td><td>89%</td><td>82</td><td>6</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <script>
+    function logout() {
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>

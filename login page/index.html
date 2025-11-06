@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Student Login | SR Academy</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SR Academy | Login</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="login-container">
     <div class="login-box">
       <h1>SR Academy</h1>
-      <h2>Student Login</h2>
+      <h2>Student & Admin Login</h2>
+
       <form id="loginForm">
         <div class="input-group">
-          <label for="email">Student ID / Email</label>
-          <input type="text" id="email" placeholder="Enter your ID or email" required>
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter Username" required />
         </div>
 
         <div class="input-group">
           <label for="password">Password</label>
-          <input type="password" id="password" placeholder="Enter your password" required>
+          <input type="password" id="password" placeholder="Enter Password" required />
         </div>
 
         <button type="submit">Login</button>
       </form>
 
-      <!-- Message will show here -->
-      <p id="message"></p>
+      <div id="message"></div>
     </div>
   </div>
 
@@ -37,23 +37,26 @@
     form.addEventListener("submit", (e) => {
       e.preventDefault();
 
-      const email = document.getElementById("email").value;
-      const password = document.getElementById("password").value;
+      const username = document.getElementById("username").value.trim();
+      const password = document.getElementById("password").value.trim();
 
-      const demoEmail = "sracademy@gmail.com";
-      const demoPassword = "student";
-
-      if (email === demoEmail && password === demoPassword) {
-        message.textContent = "✅ Login Successful! Welcome to SR Academy.";
-        message.style.color = "#00ff88";
-
-        // Optional: show dashboard section here
+      if (username === "student" && password === "12345") {
+        message.style.color = "lime";
+        message.textContent = "✅ Student Login Successful! Redirecting...";
         setTimeout(() => {
-          window.location.href = "student-dashboard.html";
+          window.location.href = "student.html";
         }, 1500);
+
+      } else if (username === "admin" && password === "admin123") {
+        message.style.color = "lime";
+        message.textContent = "✅ Admin Login Successful! Redirecting...";
+        setTimeout(() => {
+          window.location.href = "admin.html";
+        }, 1500);
+
       } else {
-        message.textContent = "❌ Invalid Email or Password. Please try again.";
-        message.style.color = "#ff4d4d";
+        message.style.color = "red";
+        message.textContent = "❌ Invalid Username or Password!";
       }
     });
   </script>
