@@ -26,11 +26,10 @@
 
           <button
             onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScMsOR3pTbVl7If1VNQOSlh4hZEDaXTmMYhkN_bPUAVpl7G5g/viewform?usp=publish-editor')"
-
             class="addmission btn">
             Online Admission
           </button>
-<a href="login page/index.html"> <button class="login btn">Login</button></a>
+          <a href="login page/index.html"> <button class="login btn">Login</button></a>
         </div>
       </div>
       <nav class="navbar">
@@ -41,13 +40,16 @@
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact</a></li>
           <li>
-            <select class="opt">
-              <option value="apple" id="course">Courses</option>
-              <option value="banana">Banana</option>
-              <option value="mango">Mango</option>
-              <option value="orange">Orange</option>
+            <select class="opt" onchange="location.href=this.value;">
+              <option value="course">Courses</option>
+              <option value="#course">All Courses</option>
+              <option value="#primary">Primary</option>
+              <option value="#secondary">Secondary</option>
+              <option value="#high-school">High School</option>
             </select>
           </li>
+
+
         </ul>
       </nav>
     </div>
@@ -126,7 +128,7 @@
     <div class="course-group">
 
       <!-- 🏫 Primary Level -->
-      <div class="course-category">
+      <div id="primary" class="course-category">
         <h3>🏫 Primary (Nursery – 5th)</h3>
         <p class="category-subtitle">Building strong foundations with fun learning</p>
         <ul class="course-list">
@@ -140,7 +142,7 @@
       </div>
 
       <!-- 📘 Middle & Secondary Level -->
-      <div class="course-category">
+      <div class="course-category" id="secondary">
         <h3>📘 Middle & Secondary (6th – 10th)</h3>
         <p class="category-subtitle">Developing skills & preparing for board exams</p>
         <ul class="course-list">
@@ -155,7 +157,7 @@
       </div>
 
       <!-- 🎓 Senior Secondary Level -->
-      <div class="course-category senior">
+      <div class="course-category senior" id="hight-school">
         <h3>🎓 Senior Secondary (11th – 12th)</h3>
         <p class="category-subtitle">Choose your stream and excel in your passion</p>
 
