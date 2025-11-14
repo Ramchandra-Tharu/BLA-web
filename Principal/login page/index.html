@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SR Academy | Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <h1>SR Academy</h1>
+      <h2>Student & Admin Login</h2>
+
+      <form id="loginForm">
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter Email" required />
+        </div>
+
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter Password" required />
+        </div>
+
+        <button type="submit">Login</button>
+      </form>
+
+      <div id="message"></div>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById("loginForm");
+    const message = document.getElementById("message");
+
+    // Student data: email + password + portal file
+    const students = [
+      { email: "sracademy@gmail.com", password: "ram1431", page: "student-dashboard/ramchandra.html" },
+      { email: "sracademy@gmail.com", password: "sirjan1431", page: "student-dashboard/sirzan.html" },
+      { email: "sracademy@gmail.com", password: "susma1431", page: "student-dashboard/susma.html" },
+      { email: "sracademy@gmail.com", password: "manav1431", page: "student-dashboard/manav.html" },
+      { email: "sracademy@gmail.com", password: "shriyan1431", page: "student-dashboard/shriyan.html" }
+    ];
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      const email = document.getElementById("email").value.trim();
+      const password = document.getElementById("password").value.trim();
+
+      // Admin login
+      if (email === "admin@sracademy.com" && password === "admin123") {
+        message.style.color = "lime";
+        message.textContent = "✅ Admin Login Successful! Redirecting...";
+        setTimeout(() => {
+         window.location.href = "principal-dashboard/index.html";
+
+        },500);
+        return;
+      }
+
+      // Check student login
+      const student = students.find(
+        (s) => s.email === email && s.password === password
+      );
+
+      if (student) {
+        message.style.color = "lime";
+        message.textContent = "✅ Student Login Successful! Redirecting...";
+        setTimeout(() => {
+          window.location.href = student.page;
+        }, 1500);
+      } else {
+        message.style.color = "yellow";
+        message.textContent = "❌ Invalid Email or Password!";
+      }
+    });
+  </script>
+</body>
+</html>

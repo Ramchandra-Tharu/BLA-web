@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - Principal Panel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    body {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: #fff;
+      min-height: 100vh;
+      padding: 30px;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    header h1 {
+      font-size: 28px;
+      font-weight: 600;
+    }
+    .logout {
+      background: crimson;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      transition: .3s;
+    }
+    .logout:hover { background: #ff4d4d; }
+
+    .dashboard {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    h2 {
+      color: #ffd700;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    tr:hover {
+      background-color: rgba(255, 255, 255, 0.05);
+      transition: 0.3s;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Principal Dashboard 👨‍🏫</h1>
+    <a href="../index.html" class="logout">Logout</a>
+  </header>
+
+  <div class="dashboard">
+    <h2>📋 Student Summary</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Roll No</th>
+          <th>Name</th>
+          <th>Class</th>
+          <th>Email</th>
+          <th>Attendance %</th>
+          <th>Marks %</th>
+          <th>View Portal</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>11</td>
+          <td>Ramchandra Tharu</td>
+          <td>XII - Science</td>
+          <td>studentportal@gmail.com</td>
+          <td>91%</td>
+          <td>88%</td>
+          <td><a href="../students/ramchandra.html" style="color:#ffd700;text-decoration:none;">Open</a></td>
+        </tr>
+        <tr>
+          <td>21</td>
+          <td>Sirjan Chaudhary</td>
+          <td>XII - Science</td>
+          <td>studentportal@gmail.com</td>
+          <td>95%</td>
+          <td>90%</td>
+          <td><a href="../students/sirjan.html" style="color:#ffd700;text-decoration:none;">Open</a></td>
+        </tr>
+        <tr>
+          <td>31</td>
+          <td>Susma Chaudhary</td>
+          <td>XII - Science</td>
+          <td>studentportal@gmail.com</td>
+          <td>89%</td>
+          <td>84%</td>
+          <td><a href="../students/susma.html" style="color:#ffd700;text-decoration:none;">Open</a></td>
+        </tr>
+        <tr>
+          <td>41</td>
+          <td>Manav Khadka</td>
+          <td>XII - Science</td>
+          <td>studentportal@gmail.com</td>
+          <td>93%</td>
+          <td>86%</td>
+          <td><a href="../students/manav.html" style="color:#ffd700;text-decoration:none;">Open</a></td>
+        </tr>
+        <tr>
+          <td>51</td>
+          <td>Shriyan Tharu</td>
+          <td>XII - Science</td>
+          <td>studentportal@gmail.com</td>
+          <td>87%</td>
+          <td>82%</td>
+          <td><a href="../students/shriyan.html" style="color:#ffd700;text-decoration:none;">Open</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <footer>© 2025 Principal Dashboard | LNCT School Portal</footer>
+</body>
+</html>
