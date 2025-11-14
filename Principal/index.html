@@ -40,11 +40,12 @@
           <li><a href="../index.html#gallery">Gallery</a></li>
           <li><a href="../index.html#contact">Contact</a></li>
           <li>
-            <select class="opt">
-              <option value="apple">Apple</option>
-              <option value="banana">Banana</option>
-              <option value="mango">Mango</option>
-              <option value="orange">Orange</option>
+            <select class="opt" onchange="location.href=this.value;">
+              <option value="course">Courses</option>
+              <option value="#course">All Courses</option>
+              <option value="#primary">Primary</option>
+              <option value="#secondary">Secondary</option>
+              <option value="#high-school">High School</option>
             </select>
           </li>
         </ul>
